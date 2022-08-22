@@ -1,0 +1,522 @@
+@media (max-width: 1200px)
+	.menu
+		&_item
+			padding-right: 12px
+		&_link
+			font-size: 13px
+
+	.promo
+		&_header
+			font-size: 50px
+
+	.reasons
+		&_block
+			align-items: flex-start
+		.text_block
+			width: 300px
+	.mobile_app
+		.label
+			font-size: 35px
+		.mob_block
+			width: 310px
+	.requirements
+		&_block
+			.title
+				font-size: 34px
+		.row
+			.col-md-6
+				.requirements_grid_block
+					.requirements_info
+						padding-left: 4px
+	footer
+		.footer_wrapper
+			.footer_menu
+				width: 300px
+		.footer_submenu
+			width: 335px
+
+@media (max-width: 991px)
+	.menu
+		&_item
+			padding-right: 10px
+		&_link
+			font-size: 10px
+	.subheader
+		&_logo
+			img
+				width: 100%
+		&_text
+			font-size: 12px
+		&_phone
+			font-size: 18px
+		&_btn
+			margin-top: 20px
+			height: 40px
+			width: 100%
+	.promo
+		&_header
+			font-size: 40px
+		&_subheader
+			font-size: 30px
+	.reasons
+		.title
+			font-size: 30px
+		&_block
+			align-items: center		
+			flex-direction: column
+			.round
+				margin-bottom:20px
+				margin-right: 0
+	.mobile_app
+		.title
+			font-size: 30px
+		.mob_block
+			width: 230px	
+			.service_title
+				font-size: 20px
+			.square
+				left: 42%
+				transform: scale(0.7) 
+	.section_uber_x
+		.uber_x_block		
+			.title 
+				font-size: 32px
+	.requirements
+		&_block
+			.title
+				font-size: 32px
+		.row
+			.col-md-6
+				.requirements_grid_block
+					.requirements_title
+						font-size: 20px
+						line-height: 15px
+					.requirements_info
+						font-size: 14px
+						line-height: 20px
+					.requirements_add_info
+						font-size: 14px
+						line-height: 20px
+	.world
+		&_block
+			.title
+				font-size: 30px
+	footer
+		.footer_separator
+			margin: 0 auto
+		.footer_wrapper
+			// align-items: baseline
+			height: 50px
+			align-items: flex-end
+			& > div
+				width: 100%
+				.social_links
+					&_item
+						width: 15%
+						height: 15%
+				.footer_menu
+					width: 100%	
+					justify-content: flex-end
+					align-items: flex-end
+				.footer_menu_link
+					font-size: 12px
+					margin-right: 5px		
+				.mob_links
+					height: 50px
+					display: flex
+					flex-direction: column
+					img
+						width: 85%
+		.footer_submenu
+			margin-top: 0 auto
+			&_link
+				font-size: 10px	
+@media (max-width: 767px)	
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		width: 50%
+		height: 100vh
+		top: 0
+		left: -100%
+		padding: 20px 15px 
+		background-color: rgba(0,0,0, 0.8)
+		transition: 0.6s all
+		&_active
+			left: 0
+		&_item
+			padding-right: 0
+			border: none
+			margin: 10px 0
+		&_link
+			font-size: 20px
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateY(-50%)
+		width: 26px
+		height: 12px
+		span
+			display: block
+			height: 2px
+			width: 100%
+			background-color: #fff
+			margin-bottom: 2px
+			transition: 0.5s all
+		&_active
+			span
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px)  rotate(45deg)
+
+	.xs-hidden
+		display: none
+	.xs-visible
+		display: block
+
+	.subheader	
+		&_phone
+			display: block
+			margin-top: 10px
+			font-weight: 400
+			font-size: 16px
+			text-transform: uppercase
+			text-align: center
+			color: #FFFFFF
+		&_btn
+			display: block
+			margin: 0 auto
+			width: 200px
+			height: 40px
+			font-weight: 400
+			font-size: 12px
+			margin-top: 10px
+
+	.promo
+		&_header
+			line-height: 45px
+	.reasons
+		padding: 15px 0 15px 0
+		.title
+			font-size: 26px
+			line-height: 35px
+		&_block
+			margin: 15px auto
+
+	.mobile_app
+		padding: 25px 0 43px 0
+		.mob_block
+			margin-right: 0
+			.square
+				bottom: 41px
+				left: 50%
+				transform: translateX(-50%)
+
+	section.requirements
+		padding: 22px 0 30px 0
+		.label
+			margin-top: 0
+		.title
+			font-size: 28px
+			margin-top: 20px
+
+	.section_uber_x
+		min-height: 393px
+		background-color: #070716
+		padding: 24px 0 31px 0
+	.xs-hidden
+		display: none
+	.xs-visible
+		display: block
+		position: relative
+	
+		.uber_x_img
+			display: block
+			margin: 0 auto
+			position: static
+			transform: none
+			width: 75%
+			margin-top: 34px
+		.uber_x_info
+			color: #FFFFFF
+			font-size: 17px
+			line-height: 24px
+			margin-top: 23px
+
+	footer
+		width: 100%
+		padding: 24px 18px 30px 19px
+		.footer_separator
+			width: 350px
+			height: 6px
+		.xs-hidden
+			display: none
+		.footer_v2
+			.footer_menu
+				display: flex
+				justify-content: space-around
+				margin-top: 30px
+				a
+					font-weight: 300
+					font-size: 18px
+					line-height: 18px
+					text-transform: uppercase
+					color: #070716
+			.footer_submenu
+				width: 100%
+				display: flex
+				flex-wrap: wrap
+				justify-content: space-around
+				margin-top: 10px
+				a
+					font-weight: 300
+					font-size: 15px
+					line-height: 25px
+					text-transform: uppercase
+					color: #999
+			.lang_link
+				margin-top: 12px
+				a
+					font-size: 14px
+			.social_links
+				display: flex
+				justify-content: center
+				margin-top: 17px
+			
+				&_item
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 40px
+					height:40px
+					background-color: #070716
+					border-radius: 100%
+					margin-right: 8px
+					i
+						color: #fff
+			.mob_links
+				display: flex
+				justify-content: center
+				margin-top: 19px
+				a
+					margin-right: 50px
+					img
+						display: block
+						width: 140%
+
+@media (max-width: 575px)
+	header
+		width: 100vw
+	nav
+		position: fixed
+		height: 30px
+		width: 100vw
+	.subheader
+		height: 60px
+		top: 30px
+		width: 100%
+		&_text
+			display: none
+		&_logo
+			margin-top: 22px
+		&_phone
+			display: block
+			font-weight: 400
+			font-size: 12px
+			text-transform: uppercase
+			text-align: center
+			color: #FFFFFF
+			margin-top: 12px
+		&_btn
+			display: block
+			width: 110px
+			height: 22px
+			font-weight: 400
+			font-size: 10px
+			line-height: 22px
+			margin-top: 6px
+	.promo
+		min-height: 400px
+		padding: 93px 0 35px
+		&_header
+			font-size: 30px
+			line-height: 35px
+			padding: 0 24px
+		&_subheader
+			font-size: 20px
+			line-height: 23px
+			margin-top: 30px
+			padding: 0 10px
+		&_text
+			display: none
+		&_btn
+			width: 210px
+			height: 50px
+			font-size: 16px
+			line-height: 50px
+			color: #ffffff
+			margin-top: 73px
+	.menu
+		width: 85%
+		&_link
+			font-size: 15px
+	.reasons
+		padding: 20px 0 38px 0
+		.title
+			font-size: 16px
+			line-height: 16px
+			text-align: center
+			margin-top: 16px
+		&_block
+			margin-top: 24px
+			.round
+				height: 100px
+				width: 100px
+			.text_block
+				width: 100%
+				&_subtitle
+					font-size: 16px
+				&_info
+					font-size: 16px
+	.mobile_app
+		width: 100vw
+		.mob_block
+			width: 100%
+			margin-top: 27px
+		.title
+			font-size: 16px
+			line-height: 16px
+			margin-top: 14px
+		.subtitle_black
+			font-size: 14px
+			line-height: 21px
+			margin-top: 9px
+		
+
+	.section_uber_x
+		min-height: 393px
+		background-color: #070716
+		padding: 24px 0 31px 0
+	.xs-hidden
+		display: none
+	.xs-visible
+		display: block
+		position: relative
+		padding: 0 20px 0 23px
+	
+		.uber_x_img
+			display: block
+			transform: none
+			height: 190px
+			width: 280px
+			margin-top: 34px
+		.uber_x_info
+			width:100%
+			color: #FFFFFF
+			font-size: 17px
+			line-height: 24px
+			margin-top: 23px
+
+	section.requirements
+		padding: 24px 0 30px
+		.title
+			font-size: 16px
+			line-height: 16px
+		.row
+			.col-md-6
+				.requirements_grid_block
+					.requirements_title
+						font-size: 16px
+						line-height: 24px
+					.requirements_info
+						font-size: 14px
+						line-height: 16px
+					.requirements_add_info
+						font-size: 14px
+						line-height: 16px
+	section.world
+		height: 360px
+		padding: 26px 0 30px 0
+		.world_block
+			padding: 0
+			width: 100%
+			.city_links
+				font-size: 15px
+				line-height: 15px
+				margin: 211px 0 0 0 
+		.label.label_white 
+			margin: 0 auto
+		.title.title_white
+			font-size: 16px
+			line-height: 16px
+			margin-top: 16px
+		.subtitle.subtitle_white
+			font-size: 14px
+			line-height: 21px
+			margin-top: 11px
+			
+		
+
+
+	footer
+		width: 100%
+		padding: 24px 18px 30px 19px
+		.footer_separator
+			width: 255px
+			height: 6px
+		.xs-hidden
+			display: none
+		.footer_v2
+			.footer_menu
+				display: flex
+				justify-content: space-between
+				margin-top: 21px
+				a
+					font-weight: 300
+					font-size: 12px
+					line-height: 14px
+					text-transform: uppercase
+					color: #070716
+			.footer_submenu
+				width: 100%
+				display: flex
+				flex-wrap: wrap
+				justify-content: space-around
+				margin-top: 10px
+				a
+					font-weight: 300
+					font-size: 11px
+					line-height: 23px
+					text-transform: uppercase
+					color: #999
+			.lang_link
+				margin-top: 10px
+			.social_links
+				display: flex
+				justify-content: center
+				margin-top: 17px
+			
+				&_item
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 35px
+					height:35px
+					background-color: #070716
+					border-radius: 100%
+					margin-right: 5px
+					i
+						color: #fff
+			.mob_links
+				margin-top: 19px
+				a
+					img
+						width: 150%
